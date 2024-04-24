@@ -1,0 +1,24 @@
+import = [
+  "./catppuccin-frappe.toml",
+]
+
+live_config_reload = true
+
+# envionnement variables
+[env]
+term = "alacritty"
+
+[window]
+decorations = "None"
+
+[font]
+normal = {family = "JetBrainsMono NF", style = "Regular"}
+bold = {family = "JetBrainsMono NF", style = "Bold"}
+italic = {family = "JetBrainsMono NF", style = "Italic"}
+bold_italic = {family = "JetBrainsMono NF", style = "Bold Italic"}
+size = 12
+
+[cursor]
+style = {shape = "Beam", blinking = "Never"}
+vi_mode_style = {shape = "Block", blinking = "Never"}
+
