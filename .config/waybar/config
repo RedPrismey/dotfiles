@@ -1,0 +1,135 @@
+{
+  "height": "10px",
+  "layer": "top",
+  "position": "top",
+
+  "margin-top": 0,
+  "margin-bottom": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+
+  "spacing": 2,
+
+  "gtk-layer-shell": true,
+
+  // Modules left
+  "modules-left": [
+    "hyprland/workspaces",
+  ],
+  "wlr/workspaces": {
+    "on-click": "activate",
+
+    "format": "{icon}",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "default": "1"
+    }
+  },
+
+  // Modules center
+  "modules-center": [
+		"clock#1",
+		"clock#2",
+		"clock#3",
+  ],
+	"clock#1": {
+		"format": "{:L%a}",
+		"tooltip": false,
+    "locale": "fr_FR.utf8"
+	},
+	"clock#2": {
+		"format": "{:%H:%M}",
+		"tooltip": false
+	},
+	"clock#3": {
+		"format": "{:%d/%m}",
+		"tooltip": false
+	},
+
+  // Modules right
+  "modules-right": [
+    "cpu",
+    "memory",
+    "backlight",
+    "pulseaudio#audio",
+    "network#wlan0",
+    "battery",
+    "custom/powermenu",
+  ],
+  "cpu": {
+    "format": "󰻠  {usage}%",
+    "on-click": "",
+    "tooltip": false
+  },
+  "memory": {
+    "format": "󰍛  {used:0.1f}GB / {total:0.1f}GB",
+    "on-click": "",
+    "tooltip": false
+  },
+  "backlight": {
+    "format": "{icon} {percent}%",
+    "format-icons": ["󰃟 "],
+    "on-scroll-up": "brightnessctl set +5% && ~/.config/dunst/scripts/show_brightness.sh",
+    "on-scroll-down": "brightnessctl set 5%- && ~/.config/dunst/scripts/show_brightness.sh",
+    "on-click": "",
+    "tooltip": false
+  },
+  "pulseaudio#audio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰖁 {volume}%",
+    "format-icons": {
+      "default": ["󰕿", "󰖀", "󰕾"]
+    },
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%",
+    "tooltip": false,
+    "tooltip-format": "{icon} {desc}"
+  },
+  "network#wlan0": {
+    "interval": 1,
+    "interface": "wlan0",
+    "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
+    "format-wifi": "{icon}",
+    "format-disconnected": "󱞐 ",
+    "on-click": "nm-connection-editor",
+    "tooltip": true,
+    "tooltip-format": "{icon} {essid}\n󰩟  {ipaddr}/{cidr}\n󰢮  {ifname}\n󱑽  {signalStrength}% {signaldBm} dBm {frequency} MHz\n󰞒  {bandwidthDownBytes}\n󰞕  {bandwidthUpBytes}"
+  },
+  "network#eth0": {
+    "interval": 1,
+    "interface": "eth0",
+    "format-icons": ["󰈀 "],
+    "format-ethernet": "{icon}",
+    "format-disconnected": "{icon}",
+    "format-disconnected": "",
+    "on-click": "",
+    "tooltip": true,
+    "tooltip-format": "󰢮  {ifname}\n󰩟  {ipaddr}/{cidr}\n󰞒  {bandwidthDownBytes}\n󰞕  {bandwidthUpBytes}"
+  },
+  "battery": {
+    "states": {
+      "warning": 20,
+      "critical": 10
+    },
+    "format": "{icon}{capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󱘖  {capacity}%",
+    "format-icons": ["󰁺 ", "󰁻 ", "󰁼 ", "󰁽 ", "󰁾 ", "󰁿 ", "󰂀 ", "󰂁 ", "󰂂 ", "󰁹 "],
+    "on-click": "",
+    "tooltip": false
+  },
+  "custom/powermenu": {
+    "format": "󰤆",
+    "on-click": "wlogout",
+    "tooltip": false
+  }
+}
