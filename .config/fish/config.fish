@@ -9,6 +9,11 @@ abbr --add tel cd /mnt/data/1-Téléchargement/
 # fzf key bindings
 fzf_configure_bindings --directory=\ef --history=\er --processes=\ep --variables=\ev --git_log=\el --git_status=\es
 
+function fish_greeting
+    treefetch
+end
+
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
