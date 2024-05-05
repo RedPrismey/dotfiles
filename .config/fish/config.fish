@@ -6,6 +6,7 @@ alias l "eza --icons --color --group-directories-first --long --no-time --no-use
 alias ll "eza --icons --color --group-directories-first --all --long --no-time --no-user"
 alias lt "eza --icons --color --group-directories-first --tree --level 3"
 
+alias cat "bat -pp"
 
 # Abbreviations
 abbr --add cd z
