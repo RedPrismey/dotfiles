@@ -1,10 +1,17 @@
 # Aliases
-abbr --add nv nvim
-abbr --add ls lsd
-abbr --add l lsd -lA
-abbr --add ll lsd -la
-abbr --add obs cd /mnt/data/4-obsidian/main/
-abbr --add tel cd /mnt/data/1-Téléchargement/
+alias nv nvim
+
+alias ls "eza --icons --color --group-directories-first"
+alias l "eza --icons --color --group-directories-first --long --no-time --no-user"
+alias ll "eza --icons --color --group-directories-first --all --long --no-time --no-user"
+alias lt "eza --icons --color --group-directories-first --tree --level 3"
+
+
+# Abbreviations
+abbr --add cd z
+
+abbr --add obs z $OBSIDIAN_PATH
+
 
 # fzf key bindings
 fzf_configure_bindings --directory=\ef --history=\er --processes=\ep --variables=\ev --git_log=\el --git_status=\es
@@ -17,3 +24,7 @@ end
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
+
+
+# zoxide initialization
+zoxide init fish | source
