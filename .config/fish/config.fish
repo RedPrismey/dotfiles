@@ -29,4 +29,3 @@ end
 
 # zoxide initialization
 zoxide init fish | source
-pyenv init - | source
