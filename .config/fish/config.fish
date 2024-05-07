@@ -15,7 +15,7 @@ abbr --add obs z $OBSIDIAN_PATH
 
 
 # fzf key bindings
-fzf_configure_bindings --directory=\ef --history=\er --processes=\ep --variables=\ev --git_log=\el --git_status=\es
+fzf_configure_bindings --directory=\ef --history=\er --processes=\ep --variables=\ev --git_log=\el --git_status=\e\cs
 
 function fish_greeting
     treefetch
