@@ -7,4 +7,4 @@ sudo pacman -S fish fisher\
   hyprland hyprpaper waybar
 
 # fish config
-fisher update
+fisher install $(cat ./.config/fish/fish_plugins)
