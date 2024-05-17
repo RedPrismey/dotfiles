@@ -1,3 +1,7 @@
+# General fish stuff
+set -U fish_greeting #Disable default greeting
+set -U fish_key_bindings fish_vi_key_bindings
+
 # Aliases
 alias nv nvim
 
@@ -13,13 +17,12 @@ abbr --add cd z
 
 abbr --add obs z $OBSIDIAN_PATH
 
+# Plugin management
+
+
 
 # fzf key bindings
 fzf_configure_bindings --directory=\ef --history=\er --processes=\ep --variables=\ev --git_log=\el --git_status=\e\cs
-
-function fish_greeting
-
-end
 
 
 if status is-interactive
@@ -28,3 +31,4 @@ end
 
 
 zoxide init fish | source
+starship init fish | source

@@ -1,0 +1,83 @@
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$line_break\
+$character"""
+
+right_format = """
+$cmd_duration\
+$c\
+$container\
+$docker_context\
+$python\
+$rust\
+$typst"""
+
+palette = 'perso'
+
+[palettes.perso]
+primary_fg = "blue"
+secondary_fg = "bright-black"
+
+[directory]
+format = '[$path]($style)'
+style = "primary_fg"
+truncation_symbol = "…/"
+
+[cmd_duration]
+format = '[$duration]($style) '
+style = "yellow"
+
+[character]
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](red)"
+vimcmd_symbol = "[❮](purple)"
+
+[git_branch]
+style = "bright-black"
+format = "[$symbol$branch(:$remote_branch)]($style)"
+
+[git_status]
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
+style = "cyan"
+conflicted = "​"
+untracked = "​"
+modified = "​"
+staged = "​"
+renamed = "​"
+deleted = "​"
+stashed = "≡"
+
+[git_state]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = "secondary_fg"
+
+[hostname]
+ssh_only = true
+format = '[$hostname]($style) '
+
+[c]
+format = '[$symbol($version(-$name) )]($style)'
+symbol = " "
+
+[container]
+format = '[$symbol \[$name\]]($style) '
+
+[docker_context]
+format = '[$symbol$context]($style) '
+
+[python]
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+symbol = " "
+
+[rust]
+format = '[$symbol($version )]($style)'
+symbol = " "
+
+[typst]
+format = '[$symbol($version )]($style)'
+symbol = 'typst '
