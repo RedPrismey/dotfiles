@@ -24,7 +24,7 @@ primary_fg = "blue"
 secondary_fg = "bright-black"
 
 [directory]
-format = '[$path]($style)'
+format = '[$path]($style) '
 style = "primary_fg"
 truncation_symbol = "…/"
 
@@ -40,6 +40,7 @@ vimcmd_symbol = "[❮](purple)"
 [git_branch]
 style = "bright-black"
 format = "[$symbol$branch(:$remote_branch)]($style)"
+symbol = ""
 
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
