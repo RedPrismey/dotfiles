@@ -18,11 +18,16 @@ return {
     workspaces = {
       {
         name = "main",
-        path = "/home/nathan/documents/obsidian/",
+        path = "~/documents/obsidian/",
       },
     },
 
     new_notes_location = "current_dir",
+
+    completion = {
+      nvim_cmp = true,
+      min_chars = 2,
+    },
 
     attachments = {
       -- The default folder to place images in via `:ObsidianPasteImg`.
