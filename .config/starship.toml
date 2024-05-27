@@ -17,6 +17,7 @@ $python\
 $rust\
 $typst"""
 
+add_newline = false
 palette = 'perso'
 
 [palettes.perso]
