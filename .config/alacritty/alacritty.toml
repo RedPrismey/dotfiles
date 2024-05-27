@@ -4,11 +4,8 @@ import = [
 
 live_config_reload = true
 
-# envionnement variables
-[env]
-term = "alacritty"
-
 [window]
+padding = { x = 2, y = 0 }
 decorations = "Full"
 
 [font]
