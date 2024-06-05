@@ -10,6 +10,6 @@ return {
   end,
 
   opts = {
-    open_cmd = "firefox %s -P typst-preview --class typst-preview",
+    open_cmd = "librewolf %s -P typst-preview --class typst-preview",
   },
 }
