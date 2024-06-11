@@ -5,20 +5,21 @@ $directory\
 $git_branch\
 $git_state\
 $git_status\
-$line_break\
-$character"""
-
-right_format = """
+$fill\
 $cmd_duration\
 $c\
 $container\
 $docker_context\
 $python\
 $rust\
-$typst"""
+$typst
+$character"""
 
 add_newline = false
 palette = 'perso'
+
+[fill]
+symbol = ' '
 
 [palettes.perso]
 primary_fg = "blue"
