@@ -1,0 +1,12 @@
+[credential]
+	helper = libsecret
+[user]
+	email = prismey@murena.io
+	name = Prismey
+[core]
+	editor = nvim
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
