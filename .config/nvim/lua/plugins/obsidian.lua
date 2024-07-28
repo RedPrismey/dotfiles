@@ -1,6 +1,6 @@
 return {
   "epwalsh/obsidian.nvim",
-  version = "*", -- recommended, use latest release instead of latest commit
+  version = "*",   -- recommended, use latest release instead of latest commit
   lazy = true,
   ft = "markdown", -- Pour n'interagir qu'avec les fichiers du vault obsidian, voir la doc
 
