@@ -1,0 +1,13 @@
+[credential]
+	helper = libsecret
+[user]
+	email = prismey@murena.io
+	name = Prismey
+	signingkey = 78240D1D3BABBA37B47208C5A9549F4D37DFD416
+[core]
+	editor = nvim
+[alias]
+  st = status -s -b --find-renames
+	last = log -1 HEAD
+[init]
+	defaultBranch = master
