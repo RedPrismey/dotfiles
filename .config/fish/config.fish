@@ -11,11 +11,14 @@ alias lt "eza --icons --color --group-directories-first --tree --level 3"
 
 alias cat "bat -pp"
 
+alias man batman
+
 # Abbreviations
 abbr --add cd z
-
 abbr --add obs z $OBSIDIAN_PATH
 
+# Env var
+set -gx EDITOR nvim
 
 # fzf key bindings
 fzf_configure_bindings --directory=\ef --history=\er --processes=\ep --variables=\ev --git_log=\el --git_status=\e\cs
