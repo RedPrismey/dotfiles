@@ -1,10 +1,6 @@
 return {
-  "sainnhe/everforest",
-
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "everforest",
-    },
-  },
+   "LazyVim/LazyVim",
+   opts = {
+      colorscheme = "catppuccin",
+   },
 }
