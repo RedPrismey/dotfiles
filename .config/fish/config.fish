@@ -35,3 +35,6 @@ starship init fish | source
 
 # transient prompt for starship
 enable_transience
+
+# Created by `pipx` on 2024-11-11 13:03:46
+set PATH $PATH /home/ambre/.local/bin
