@@ -1,8 +1,13 @@
 return {
    "neovim/nvim-lspconfig",
-   opt = {
-      formatterMode = "typstyle",
-      exportPdf = "onType",
-      semanticTokens = "disable",
+   opts = {
+      servers = {
+         typst_lsp = {
+            settings = {
+               exportPdf = "onSave",
+               formatterMode = "typstyle",
+            },
+         },
+      },
    },
 }
