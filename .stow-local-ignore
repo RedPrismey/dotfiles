@@ -4,7 +4,6 @@ README.md
 
 
 # Comments and blank lines are allowed.
-
 RCS
 .+,v
 
@@ -23,7 +22,7 @@ _darcs
 .+~          # emacs backup files
 \#.*\#       # emacs autosave files
 
-^/README.*
-^/LICENSE.*
+^/README*
+^/LICENSE*
 ^/COPYING
 

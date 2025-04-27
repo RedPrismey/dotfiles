@@ -10,4 +10,4 @@
   st = status -s -b --find-renames
 	last = log -1 HEAD
 [init]
-	defaultBranch = master
+	defaultBranch = main
