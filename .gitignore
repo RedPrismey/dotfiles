@@ -1,5 +1,6 @@
 # Nvim stuff
 .config/nvim/lazy-lock.json
+.config/nvim/lazyvim.json
 
 # Fish stuff
 .config/fish/functions
