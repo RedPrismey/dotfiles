@@ -1,5 +1,5 @@
 [credential]
-	helper = libsecret
+	helper = /usr/lib/git-core/git-credential-libsecret
 [user]
 	email = prismey@murena.io
 	name = Prismey
@@ -10,4 +10,4 @@
   st = status -s -b --find-renames
 	last = log -1 HEAD
 [init]
-	defaultBranch = master
+	defaultBranch = main
