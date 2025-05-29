@@ -1,1 +1,1 @@
-vim.opt.spelllang = { "en", "fr" }
+vim.opt.spelllang = { "fr", "en" }
