@@ -63,19 +63,19 @@ return {
     end,
     keys = {
       {
-        "<localleader>tp",
+        "<leader>tp",
         ":TypstPreview<CR>",
         desc = "Start Typst preview",
         mode = { "n" },
       },
       {
-        "<localleader>ts",
+        "<leader>ts",
         ":TypstPreviewStop<CR>",
         desc = "Stop Typst preview",
         mode = { "n" },
       },
       {
-        "<localleader>tt",
+        "<leader>tt",
         ":TypstPreviewToggle<CR>",
         desc = "Toggle Typst preview",
         mode = { "n" },
