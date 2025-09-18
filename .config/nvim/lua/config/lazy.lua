@@ -29,6 +29,8 @@ require("lazy").setup({
 
     { import = "lazyvim.plugins.extras.lang.docker" },
 
+    { import = "lazyvim.plugins.extras.lang.java" },
+
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
 
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },

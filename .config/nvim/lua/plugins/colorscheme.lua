@@ -7,9 +7,9 @@ return {
   },
   {
     "catppuccin/nvim",
-    name = "catppuccin",
     opts = {
       flavour = "mocha",
     },
+    tag = "v1.10.0", -- à remove quand bufferline sera fix
   },
 }
