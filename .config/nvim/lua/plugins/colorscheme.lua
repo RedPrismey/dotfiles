@@ -10,6 +10,6 @@ return {
     opts = {
       flavour = "mocha",
     },
-    tag = "v1.10.0", -- à remove quand bufferline sera fix
+    commit = "f19cab18ec4dc86d415512c7a572863b2adbcc18",
   },
 }
