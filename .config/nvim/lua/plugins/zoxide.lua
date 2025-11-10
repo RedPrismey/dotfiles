@@ -16,11 +16,17 @@ local function zoxide_jump()
 end
 
 return {
-  -- zoxide change dir with fzf-lua
   {
     "ibhagwan/fzf-lua",
     keys = {
       { "<leader>z", zoxide_jump, "n", desc = "Change directory with zoxide" },
     },
+  },
+  {
+    "ibhagwan/fzf-lua",
+    opts = function(opts)
+      vim.cmd([[FzfLua register_ui_select]])
+      return opts
+    end,
   },
 }

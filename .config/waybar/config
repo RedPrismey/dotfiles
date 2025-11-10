@@ -66,12 +66,12 @@
   ],
   "cpu": {
     "format": "󰻠  {usage}%",
-    "on-click": "",
+    "on-click": "kitty btm",
     "tooltip": false
   },
   "memory": {
     "format": "󰍛  {used:0.1f}GB / {total:0.1f}GB",
-    "on-click": "",
+    "on-click": "kitty btm",
     "tooltip": false
   },
   "backlight": {
@@ -79,7 +79,6 @@
     "format-icons": ["󰃟 "],
     "on-scroll-up": "brightnessctl set +5% && ~/.config/dunst/scripts/show_brightness.sh",
     "on-scroll-down": "brightnessctl set 5%- && ~/.config/dunst/scripts/show_brightness.sh",
-    "on-click": "",
     "tooltip": false
   },
   "pulseaudio#audio": {
@@ -111,7 +110,7 @@
     "format-ethernet": "{icon}",
     "format-disconnected": "{icon}",
     "format-disconnected": "",
-    "on-click": "",
+    "on-click": "nm-connection-editor",
     "tooltip": true,
     "tooltip-format": "󰢮  {ifname}\n󰩟  {ipaddr}/{cidr}\n󰞒  {bandwidthDownBytes}\n󰞕  {bandwidthUpBytes}"
   },
@@ -124,7 +123,6 @@
     "format-charging": "󰂄 {capacity}%",
     "format-plugged": "󱘖  {capacity}%",
     "format-icons": ["󰁺 ", "󰁻 ", "󰁼 ", "󰁽 ", "󰁾 ", "󰁿 ", "󰂀 ", "󰂁 ", "󰂂 ", "󰁹 "],
-    "on-click": "",
     "tooltip": false
   },
   "custom/powermenu": {
